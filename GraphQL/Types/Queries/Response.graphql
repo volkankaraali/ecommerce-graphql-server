@@ -1,0 +1,17 @@
+scalar JSON
+
+type LoginResponse {
+token: String!
+userType: String
+}
+
+type RegisterResponse {
+token: String!
+user: String!
+}
+
+type Message {
+status: Int!
+message: String!
+data: JSON
+}

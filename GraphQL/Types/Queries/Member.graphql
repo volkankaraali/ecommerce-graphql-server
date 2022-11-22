@@ -1,0 +1,6 @@
+type Member {
+name: String
+surname: String
+address: String
+telNo: String
+}

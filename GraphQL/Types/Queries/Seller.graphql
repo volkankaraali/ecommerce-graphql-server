@@ -1,0 +1,5 @@
+type Seller {
+companyName: String
+address: String
+telNo: String
+}

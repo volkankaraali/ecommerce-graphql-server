@@ -1,0 +1,14 @@
+type Query {
+user(id: ID!): User!
+users: [User!]!
+activeUser: User
+}
+
+type User {
+id: ID!
+email: String
+password: String
+createdAt: Int
+seller: Seller
+member: Member
+}

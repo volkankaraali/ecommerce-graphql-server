@@ -1,0 +1,17 @@
+union OrdersUnion = OrderDto | Message
+
+type Query {
+orders: [OrdersUnion]
+}
+
+type OrderDto {
+id: ID
+products: [OrderProduct!]
+total_price: Int
+}
+
+type OrderProduct {
+name: String
+price: Int
+quantity: Int
+}

@@ -1,0 +1,9 @@
+type Mutation {
+addOrder(data: [AddOrderInput!]!): Message
+}
+
+input AddOrderInput {
+productId: ID!
+quantity: Int!
+price: Int!
+}

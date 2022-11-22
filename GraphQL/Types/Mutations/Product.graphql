@@ -1,0 +1,22 @@
+type Mutation {
+addProduct(data: AddProductInput!): Message
+deleteProduct(id: ID!): Message
+updateProduct(data: UpdateProductInput!): Message
+}
+
+input AddProductInput {
+name: String!
+price: Int!
+imageUrl: String
+categoryId: ID!
+brandId: ID!
+stock: Int!
+}
+
+input UpdateProductInput {
+id: ID!
+name: String
+price: Int
+imageUrl: String
+stock: Int
+}

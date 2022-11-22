@@ -1,0 +1,16 @@
+scalar JSON
+
+type Query {
+getAllProducts: [Product!]!
+getProductById(id: ID!): Message
+getProductsBySeller: [Product!]!
+}
+
+type Product {
+name: String!
+price: Int!
+imageUrl: String
+seller: JSON
+category: Category
+brand: Brand
+}

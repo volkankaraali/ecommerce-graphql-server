@@ -1,0 +1,18 @@
+type Mutation {
+sellerRegister(data: SellerRegisterInput!): Message
+updateSeller(data: UpdateSellerInput!): Message
+}
+
+input UpdateSellerInput {
+email: String
+password: String
+companyName: String
+telNo: String
+address: String
+}
+
+input SellerRegisterInput {
+email: String!
+password: String!
+companyName: String!
+}

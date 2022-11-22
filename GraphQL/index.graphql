@@ -1,0 +1,24 @@
+# import * from './Types/Queries/Response.graphql'
+
+
+# import Query from './Types/Queries/User.graphql'
+# import Mutation  from './Types/Mutations/User.graphql'
+
+
+# import Mutation  from './Types/Mutations/Member.graphql'
+# import Query  from './Types/Queries/Member.graphql'
+
+
+# import Mutation  from './Types/Mutations/Seller.graphql'
+# import Query  from './Types/Queries/Seller.graphql'
+
+
+# import Query from './Types/Queries/Product.graphql'
+# import Mutation from './Types/Mutations/Product.graphql'
+
+# import Query from './Types/Queries/Category.graphql'
+
+# import Query from './Types/Queries/Brand.graphql'
+
+# import Query from './Types/Queries/Order.graphql'
+# import Mutation from './Types/Mutations/Order.graphql'

@@ -1,0 +1,25 @@
+type Mutation {
+memberRegister(data: MemberRegisterInput!): Message
+updateMember(data: UpdateMemberInput!): Message
+}
+
+input MemberRegisterInput {
+email: String!
+password: String!
+name: String!
+surname: String!
+}
+
+input UpdateMemberInput {
+email: String
+password: String
+name: String
+surname: String
+telNo: String
+address: String
+}
+
+input LoginInput {
+email: String!
+password: String!
+}
