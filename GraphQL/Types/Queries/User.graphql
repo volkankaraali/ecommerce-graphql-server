@@ -1,14 +1,20 @@
+union UserUnion = SellerUser | MemberUser
+
 type Query {
-user(id: ID!): User!
-users: [User!]!
-activeUser: User
+user(id: ID!): UserUnion
+activeUser: UserUnion
 }
 
-type User {
+type SellerUser {
 id: ID!
 email: String
-password: String
-createdAt: Int
 seller: Seller
+userType: Int
+}
+
+type MemberUser {
+id: ID!
+email: String
 member: Member
+userType: Int
 }

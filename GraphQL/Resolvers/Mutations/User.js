@@ -14,10 +14,8 @@ module.exports = {
       const member = await Member.findOne({ userId:user._id });
       const seller = await Seller.findOne({ userId:user._id });
 
-      console.log(user)
       const data = { token: user?.credentials?.token, userType: member && "1" || seller && '0'};
 
-      // return { token: user?.credentials?.token, userType: member && "1" || seller && '0'};
       return successMessage(200,'Login succesfull',data)
 
     } catch (error) {

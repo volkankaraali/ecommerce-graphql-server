@@ -5,12 +5,12 @@
 # import Mutation  from './Types/Mutations/User.graphql'
 
 
-# import Mutation  from './Types/Mutations/Member.graphql'
 # import Query  from './Types/Queries/Member.graphql'
+# import Mutation  from './Types/Mutations/Member.graphql'
 
 
-# import Mutation  from './Types/Mutations/Seller.graphql'
 # import Query  from './Types/Queries/Seller.graphql'
+# import Mutation  from './Types/Mutations/Seller.graphql'
 
 
 # import Query from './Types/Queries/Product.graphql'

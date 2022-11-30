@@ -1,6 +1,6 @@
 const OrdersUnion = {
   __resolveType(obj, context, info){
-    if(obj.total_price){
+    if(obj.id){
       return 'OrderDto';
     }
     if(obj.message){

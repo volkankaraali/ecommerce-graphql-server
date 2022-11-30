@@ -4,7 +4,7 @@ const { errorMessage, successMessage } = require('../../../Utils/ResponseMessage
 module.exports = {
   orders: async(parent, args, { OrderDetail, activeUser, activeUserType }) => {
     try {
-      console.log(activeUser)
+      // console.log(activeUser)
       if(!activeUser) return [{status:400,message: 'Access denied!'}]
       
       // 0 => Seller, 1 => Member
