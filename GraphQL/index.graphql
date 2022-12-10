@@ -17,6 +17,7 @@
 # import Mutation from './Types/Mutations/Product.graphql'
 
 # import Query from './Types/Queries/Category.graphql'
+# import Mutation from './Types/Mutations/Category.graphql'
 
 # import Query from './Types/Queries/Brand.graphql'
 

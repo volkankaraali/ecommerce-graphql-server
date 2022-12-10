@@ -3,6 +3,7 @@ const Member = require('./Member');
 const Seller = require('./Seller');
 const Product = require('./Product');
 const Order = require('./Order');
+const Category = require('./Category');
 
 const Mutation = {
   ...User,
@@ -10,6 +11,7 @@ const Mutation = {
   ...Seller,
   ...Product,
   ...Order,
+  ...Category,
 };
 
 module.exports = Mutation;

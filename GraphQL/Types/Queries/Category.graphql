@@ -1,6 +1,5 @@
 type Query {
-categories: [Category]
-category(id: ID!): Category!
+categories: Message
 }
 
 type Category {

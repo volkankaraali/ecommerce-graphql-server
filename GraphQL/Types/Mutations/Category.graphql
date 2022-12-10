@@ -1,0 +1,13 @@
+type Mutation {
+addParentCategory(data: ParentCategoryInput!): Message
+addSubCategory(data: SubCategoryInput!): Message
+}
+
+input ParentCategoryInput {
+name: String!
+}
+
+input SubCategoryInput {
+name: String!
+parentCategoryId: ID!
+}

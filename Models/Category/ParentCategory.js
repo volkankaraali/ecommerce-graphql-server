@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const CategorySchema = new mongoose.Schema({
+const ParentCategorySchema = new mongoose.Schema({
   name:{
     type: String,
   },
@@ -12,4 +12,4 @@ const CategorySchema = new mongoose.Schema({
  
 })
 
-module.exports = mongoose.model('categories',CategorySchema);
+module.exports = mongoose.model('parent_categories',ParentCategorySchema);

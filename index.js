@@ -19,7 +19,7 @@ const Seller = require('./Models/Seller');
 const Member = require('./Models/Member');
 const Product = require('./Models/Product');
 const Brand = require('./Models/Brand');
-const Category = require('./Models/Category');
+const { ParentCategory, SubCategory } = require('./Models/Category');
 const OrderDetail = require('./Models/OrderDetail');
 const OrderItem = require('./Models/OrderItem');
 
@@ -65,7 +65,8 @@ async function startServer(){
           Seller,
           Product,
           Brand,
-          Category,
+          ParentCategory, 
+          SubCategory,
           OrderDetail,
           OrderItem,
           activeUser,
@@ -76,7 +77,10 @@ async function startServer(){
         User,
         Seller,
         Member,
-        Product
+        Product,
+        ParentCategory, 
+        SubCategory,
+
       }
       
     }
